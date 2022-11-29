@@ -1,5 +1,5 @@
 // next.config.js
-const withMDX = require('@zeit/mdx')({
+const withMDX = require('@next/mdx')({
   options: {
     mdPlugins: [
 
