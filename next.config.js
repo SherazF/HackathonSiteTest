@@ -1,6 +1,8 @@
-const withMDX = require('@zeit/next-mdx')({
-  extension: /\.mdx?$/
+// next.config.js
+const withMDX = require('@next/mdx')({
+  options: {
+    remarkPlugins: [],
+    rehypePlugins: [],
+  },
 })
-module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'mdx']
-})
+module.exports = withMDX()
