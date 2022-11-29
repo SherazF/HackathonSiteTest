@@ -1,14 +1,7 @@
 // next.config.js
 const withMDX = require('@next/mdx')({
-  options: {
-    mdPlugins: [
-
-    ],
-    hastPlugins: [
-
-    ]
-  }
+  extension: /\.mdx?$/,
 })
 module.exports = withMDX({
-  pageExtensions: ['js', 'jsx', 'mdx']
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'],
 })
